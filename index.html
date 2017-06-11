@@ -1,3 +1,4 @@
+<!--#22 HTML5から使える属性を使ってみよう-->
 <!DOCTYPE html>
 <html lan='ja'>
   <head>
@@ -8,24 +9,16 @@
 
 <!--
 input
-  checkbox
-  radio
-label
+  email
+  number
+  date
 -->
     <article>
         <h1>アンケート</h1>
         <form action="survey.php" method="post">
-          <p>メールアドレス:<input type="text" name="email"></p>
-          <p>
-              Phone:
-              <label><input type="checkbox" name="phone" value="android" checked> Android</label>
-              <input type="checkbox" name="phone" value="iphone" id="iphone"><label for ="iphone"> iPhone</label>
-          </p>
-          <p>
-              Color:
-              <input type="radio" name="color" value="red" checked> Red
-              <input type="radio" name="color" value="blue"> Blue
-          </p>
+          <p>メールアドレス:<input type="email" name="email" required></p>
+          <p>料金:<input type="number" name="price"></p>
+          <p>誕生日:<input type="date" name="birthday"></p>
           <p><input type="submit" value="送信!"></p>
         </form>
     </article>
