@@ -1,4 +1,4 @@
-<!--#22 HTML5から使える属性を使ってみよう-->
+<!--#23 文字参照を使ってみよう-->
 <!DOCTYPE html>
 <html lan='ja'>
   <head>
@@ -8,19 +8,17 @@
   <body>
 
 <!--
-input
-  email
-  number
-  date
+数値文字参照
+文字実体参照
+<
+&#60;
+&lt;
 -->
     <article>
-        <h1>アンケート</h1>
-        <form action="survey.php" method="post">
-          <p>メールアドレス:<input type="email" name="email" required></p>
-          <p>料金:<input type="number" name="price"></p>
-          <p>誕生日:<input type="date" name="birthday"></p>
-          <p><input type="submit" value="送信!"></p>
-        </form>
+        <h1>文字参照</h1>
+        <p>「&lt;p&gt;タグを段落です」</p>
+        <input type='text' value='区切り文字は&quot;です'>
+        <p>「この記号の文字参照は&amp;quot;です」</p>
     </article>
   </body>
 </html>
