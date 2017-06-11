@@ -1,1 +1,15 @@
-p { color:skyblue; }
+/*#03 セレクタとプロパティを理解しよう*/
+/*
+セレクタ{プロパティ名:値;}
+セレクタ{
+  プロパティ名:値;
+  プロパティ名:値;
+}
+* ユニバーサルセレクタ
+要素名 p h1 div
+#id
+.class
+*/
+h1 { color:skyblue; }
+#first { color:orange; }
+.points { color:violet; }
