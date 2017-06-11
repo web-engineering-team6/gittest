@@ -1,4 +1,4 @@
-<!--Dotinstall HTML入門 #20 「checkbox､radio､labelを使ってみよう」の内容-->
+<!--Dotinstall HTML入門 #21 selectタグでセレクトボックスを作ろう-->
 <!DOCTYPE html>
 <html lan='ja'>
   <head>
@@ -8,25 +8,32 @@
   <body>
 
 <!--
-input
-  checkbox
-  radio
-  label
+select
+option
 -->
     <article>
         <h1>アンケート</h1>
         <form action="survey.php" method="post">
           <p>メールアドレス:<input type="text" name="email"></p>
-          <p>
-              Phone:
-              <label><input type="checkbox" name="phone" value="android" checked> Android</label>
-              <input type="checkbox" name="phone" value="iphone" id="iphone"><label for ="iphone"> iPhone</label>
+          <!--
+          <p>City:
+              <select name = 'city'>
+                  <option value='tokyo'>Tokyo</option>
+                  <option value='nagoya'>Nagoya</option>
+                  <option value='osaka' selected>Osaka</option>
+                  <option value='kyoto'>Kyoto</option>
+                  <option value='fukuoka'>Fukuoka</option>
+              </select>
           </p>
-          <p>
-              Color:
-              <input type="radio" name="color" value="red" checked> Red
-              <input type="radio" name="color" value="blue"> Blue
-          </p>
+          -->
+          <p>City:
+              <select name = 'city' multiple size='5'>
+                  <option value='tokyo'>Tokyo</option>
+                  <option value='nagoya'>Nagoya</option>
+                  <option value='osaka' selected>Osaka</option>
+                  <option value='kyoto'>Kyoto</option>
+                  <option value='fukuoka'>Fukuoka</option>
+              </select>
           <p><input type="submit" value="送信!"></p>
         </form>
     </article>
