@@ -1,12 +1,15 @@
 /*#05 属性セレクタを使ってみよう*/
 /*
 セレクタ
-擬似クラス
+擬似要素
 */
-ul li:first-child{color:skyblue;}
-a:link{color:violet;}
-a:visited{color:orange;}
-a:hover{color:pink;}
-a:active{color:red;}
+/*p:first-line {color:skyblue;}*/
+/*p:first-letter{color:skyblue;}*/
 
-input:focus{background:skyblue}
+p:before{
+  content:'-->';
+}
+
+p:after{
+  content:'<--';
+}
