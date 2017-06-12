@@ -1,11 +1,13 @@
 /*
-ボックスモデル
+border
+border-color:
+border-width:
+border-style: solid/dotted/dashed/double/inset/outset
 */
-body,html{height:100%;}
 div {
-  background:silver;
-  /*width: 200px;*/
-width:50%;
-  /*height:100px;*/
-  height:50%;
+  /*border-color:orange;
+  border-width:4px;
+  border-style:dotted;*/
+  /*border:orange 4px dotted;*/
+  border-bottom:orange 4px dotted;*/
 }
